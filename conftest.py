@@ -43,7 +43,7 @@ def driver(request):
         filename = f"screenshots/FAIL_{request.node.name}_{time_str}.png"
         os.makedirs("screenshots", exist_ok=True)
         driver.save_screenshot(filename)
-        print(f"\n📸 Скриншот при ошибке сохранён: {filename}")
+        print(f"\nСкриншот при ошибке сохранён: {filename}")
 
     driver.quit()
 
